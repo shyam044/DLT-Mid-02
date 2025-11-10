@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DLT Mid-02 - Questions</title>
+    <style>
+         * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f9f9f9;
+            color: #333;
+            font-size: 1rem;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #0077cc;
+            color: white;
+            padding: 1rem 0.5rem;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        /* Container */
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+            page-break-after: always;
+        }
+
+        /* Headings */
+        h2 {
+            color: #0077cc;
+            margin: 2rem 0 1rem;
+            font-size: 1.6rem;
+        }
+
+        h3 {
+            color: #444;
+            margin-top: 0.8rem;
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+
+        /* Paragraphs */
+        p {
+            margin: 0.5rem 0;
+        }
+
+        /* Lists */
+        ul {
+            margin: 0.3rem 0 1rem 1rem;
+            padding-left: 1rem;
+        }
+
+        li>ul {
+            margin-top: 0.3rem;
+            margin-bottom: 0.6rem;
+            padding-left: 0.7rem;
+        }
+
+        li>ul>li {
+            margin-bottom: 0.4rem;
+        }
+
+        /* Images */
+        img {
+            display: block;
+            max-width: 80%;
+            height: auto;
+            margin: 1rem auto;
+            border-radius: 6px;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            body {
+                font-size: 0.95rem;
+            }
+
+            header {
+                font-size: 1.3rem;
+                padding: 0.8rem 0.5rem;
+            }
+
+            .container {
+                padding: 0.9rem;
+                margin: 1.5rem auto;
+            }
+
+            h2 {
+                font-size: 1.3rem;
+                margin-top: 1.8rem;
+            }
+
+            h3 {
+                font-size: 1.1rem;
+                margin-top: 0.7rem;
+            }
+
+            ul {
+                margin-left: 0.5rem;
+                padding-left: 0.7rem;
+            }
+
+            li>ul {
+                margin-top: 0.2rem;
+                margin-bottom: 0.4rem;
+                padding-left: 0.5rem;
+            }
+
+            li>ul>li {
+                margin-bottom: 0.3rem;
+            }
+
+            ul li {
+                font-size: 0.95rem;
+                line-height: 1.3rem;
+            }
+        }
+
+        /* Print styles */
+        @media print {
+            .container {
+                page-break-after: always;
+            }
+        }
+
+        .subheading {
+            margin-left: 1.5rem;
+            /* Indent subheadings to the right */
+        }
+
+        @media (max-width: 768px) {
+            .subheading {
+                margin-left: 1rem;
+                /* Smaller indent for mobile */
+            }
+        }
+
+        .subsection {
+            margin-left: 1.5rem;
+            /* Indent all subheadings and content */
+        }
+
+        .subsection h4 {
+            margin-left: 0;
+            /* Keep subheading itself aligned with its content */
+        }
+
+        @media (max-width: 768px) {
+            .subsection {
+                margin-left: 1rem;
+                /* Mobile-friendly indent */
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        DLT Mid-02
+    </header>
+
+    <div class="container">
+        <h2>1) Apply Binary Classification Technique for Classifying Movie Reviews Using Keras</h2>
+        <ul>
+            <li>Binary classification for movie reviews involves classifying each movie review as <strong>positive</strong> or <strong>negative</strong>.</li>
+            <li>
+                <img src="WhatsApp Image 2025-11-10 at 17.04.49_b70d46bf.jpg" alt="Binary Classification Model Architecture for Movie Reviews" />
+                <strong>Input:</strong>
+                <ul>
+                    <li>Use the <strong>IMDb dataset</strong>.</li>
+                    <li>It contains 25,000 training samples and 25,000 testing samples.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Pre-Processing:</strong>
+                <ul>
+                    <li>Transform all text into lowercase and remove all special characters.</li>
+                    <li>Convert the sentences into a list of tokens.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Feature Extraction:</strong>
+                <ul>
+                    <li>Use Keras's <strong>Embedding</strong> Layers to convert tokens into vectors.</li>
+                    <li>
+                        <strong>Example:</strong>
+                        <ul>
+                            <li><code>a = 100</code></li>
+                            <li><code>b = 10</code></li>
+                            <li><code>Embedding(a, b)</code></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <strong>Classification:</strong>
+                <ul>
+                    <li>After the Embedding Layer, add a <strong>Flatten</strong> Layer to reduce the dimensions.</li>
+                    <li>Add one or more <strong>Dense</strong> Layers.</li>
+                    <li>Add a final Dense Layer for <strong>binary output</strong>.</li>
+                    <li>The model classifies each movie review as <strong>positive</strong> or <strong>negative</strong>.</li>
+                </ul>
+            </li>
+        </ul>
+    
+    </div>
+</body>
+</html>
