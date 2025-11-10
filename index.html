@@ -166,7 +166,12 @@
                 /* Mobile-friendly indent */
             }
         }
-        
+        pre {
+    white-space: pre-wrap;      /* Wraps lines to fit container */
+    word-wrap: break-word;      /* Allows long words to break */
+    font-family: monospace;     /* Keeps monospace font */
+}
+
     </style>
 </head>
 
@@ -383,7 +388,10 @@
         <li><strong>i) Import libraries</strong></li>
 
         <li><strong>ii) Load the Data:</strong></li>
-        <pre>(x_train, y_train), (x_test, y_test) = reuters.load_data()</pre>
+      <div style="overflow-x: auto;">
+    <pre>(x_train, y_train), (x_test, y_test) = reuters.load_data()</pre>
+</div>
+
 
         <li><strong>iii) Preprocess the Data:</strong></li>
         <pre>
@@ -474,6 +482,7 @@ model = Sequential([
 
 </body>
 </html>
+
 
 
 
