@@ -364,9 +364,50 @@
         </li>
     </ul>
 </div>
+<header>
+    DLT Mid-02
+</header>
+
+<div class="container">
+    <h2>5) Use Keras to solve Multiclass classification for classifying Newswires.</h2>
+
+    <ul>
+        <li><strong>steps:</strong></li>
+
+        <li><strong>i) Import libraries</strong></li>
+
+        <li><strong>ii) Load the Data:</strong></li>
+        <pre>(x_train, y_train), (x_test, y_test) = reuters.load_data()</pre>
+
+        <li><strong>iii) Preprocess the Data:</strong></li>
+        <pre>
+x_train = np.array(...)
+x_test = np.array(...)
+y_train = to_categorical(...)
+y_test = to_categorical(...)
+        </pre>
+
+        <li><strong>iv) Build the Model:</strong></li>
+        <pre>
+model = Sequential([
+...
+])
+        </pre>
+
+        <li><strong>V) Compile the Model:</strong></li>
+        <pre>model.compile(...)</pre>
+
+        <li><strong>Vi) Train the Model:</strong></li>
+        <pre>model.fit(x_train,y_train,...)</pre>
+
+        <li><strong>Vii) Evaluate the Model:</strong></li>
+        <pre>model.evaluate(x_test,y_test)</pre>
+    </ul>
+</div>
 
 </body>
 </html>
+
 
 
 
