@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://shyam044.github.io/DLT-Mid-02/sitemap.xml
